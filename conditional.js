@@ -52,7 +52,13 @@
 // for loop 
 // table of 8
 
-let table = 8;
-for (let i = 1; i <= 10; i++) {
-    console.log(table + " * " + i + " = " + table*i);
-}
+// let table = 8;
+// for (let i = 1; i <= 10; i++) {
+//     console.log(table + " * " + i + " = " + table*i);
+// }
+
+// for each
+
+const fruits = ['apple','mango','orange','melon','banana'];
+
+fruits.forEach((e,i,arr)=>console.log(`${e}:${i}:${arr}`));
