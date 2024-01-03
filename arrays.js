@@ -28,16 +28,19 @@
 // console.log(result);
 
 // find()
-// const prices = [400,200,300,500,600]
-// console.log(prices.find((curVal)=>curVal<400));
+const prices = [400,200,300,500,600]
+console.log(prices.find((curVal)=>curVal<400));
 
 // findIndex()
-const prices = [400,200,300,500,600]
+// const prices = [400,200,300,500,600]
 // console.log(prices.findIndex((curVal)=>curVal<400));
 
 // filter()
-const newPriceTag = prices.filter((ele)=> ele > 400);
-// console.log(newPriceTag);
+const newPriceTag = prices.filter((ele,index)=> {
+    console.log(index);
+    return ele > 400;
+});
+console.log(newPriceTag);
 
 // Sort and Compare
 // sort()
@@ -51,9 +54,9 @@ const arr = [1,30,4,21,10000,99];
 
 // push() ->> add element in end
 const animals = ['pigs','goat','chicken'];
-// const newAdd = animals.push('sheep','duck');
-// console.log(newAdd);
-// console.log(animals);
+const newAdd = animals.push('sheep','duck');
+console.log(newAdd);
+console.log(animals);
 
 // unshift() ->> add in beginning
 // const newAdd = animals.unshift('sheep','duck');

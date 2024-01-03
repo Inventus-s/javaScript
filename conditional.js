@@ -57,8 +57,18 @@
 //     console.log(table + " * " + i + " = " + table*i);
 // }
 
-// for each
-
 const fruits = ['apple','mango','orange','melon','banana'];
 
-fruits.forEach((e,i,arr)=>console.log(`${e}:${i}:${arr}`));
+// for in
+// for (let index in fruits){
+//     console.log(index);
+// }
+
+// for of
+// for (let ele of fruits){
+//     console.log(ele);
+// }
+
+// for each
+// fruits.forEach((e,i,arr)=>console.log(`${e}:${i}:${arr}`));
+// fruits.forEach((e,i)=>console.log(`${e}:${i}`));
