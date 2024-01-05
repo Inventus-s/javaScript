@@ -48,3 +48,17 @@ console.log(new Date(1702107436938).toLocaleString()); // checking outputs
 
 /*--->Time Method<---*/
 
+let curTime = new Date();
+
+//get individual time
+console.log(curTime.getTime());
+console.log(curTime.getHours());
+console.log(curTime.getMinutes());
+console.log(curTime.getSeconds());
+console.log(curTime.getMilliseconds());
+
+// set individual time
+// console.log(curTime.setTime(10));
+console.log(curTime.setHours(10));
+console.log(curTime.setMinutes(10));
+console.log(curTime.setMilliseconds(10));

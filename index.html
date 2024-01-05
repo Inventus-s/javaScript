@@ -6,6 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello</h1>
+    <h1>Click the Button to Display Date or Time</h1>
+    <button onclick="currentDate()">Try it</button>
+    <h3 id="time"></h3>
+    <h3 id="date"></h3>
+
+    <script>
+        function currentDate() {
+            setInterval(()=>{
+                let t = new Date().toLocaleTimeString();
+                document.getElementById("time").innerText = t;
+                let d = new Date().toLocaleDateString();
+                document.querySelector('#date').innerHTML = d;
+            },1000)
+        }
+
+        
+    </script>
 </body>
 </html>
