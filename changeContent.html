@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change content</title>
+</head>
+<body>
+    <h2  id="changeContent">Click below Button to Chnage Content</h2>
+    <button onclick="changeContent()" style="cursor: pointer;">Click me</button>
+
+    <script>
+        function changeContent() {
+            document.querySelector('#changeContent').innerHTML = "Welcome at my portfolio";
+        }
+    </script>
+</body>
+</html>
