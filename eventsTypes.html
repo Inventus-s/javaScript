@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Types</title>
+    <style>
+        .heading{
+            width: 100vw;
+            text-align: center;
+        }
+
+        .container{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 5rem;
+        }
+
+        .box{
+            border: 1px solid black;
+            padding: 15px 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+            background-color: yellow;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="heading">Different Events Types in JavaScript</h2>
+    <div class="container">
+        <div class="box" onclick="alert('I am Awesome, but no one use me')">Simple inline alert()</div>
+        <div class="box" onclick="secondWay()">By calling a function</div>
+        <div class="box" id="thirdWay">Inline Event</div>
+        <div class="box" id="fourthWay">Event Listener</div>
+    </div>
+
+    <script>
+        function secondWay(){
+            alert('Most common way of writing functions')
+        }
+
+        const thirdWay = document.getElementById('thirdWay');
+        thirdWay.onclick = function(){
+            alert('Most Common way of writing functions again');
+        }
+
+        const fourthWay = document.getElementById('fourthWay');
+        fourthWay.addEventListener('click',()=>{
+            alert('I love this way of writing functions')
+        })
+    </script>
+</body>
+</html>
