@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Press</title>
+    <style>
+        .container{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+            margin-top: 5rem;
+            font-size: 30px;
+        }
+
+        .inputKey{
+            padding: 20px 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>A function is triggered when the user is pressing a key in the output feild.</p>
+        <input type="text" class="inputKey" onkeypress="keyPress()" onkeydown="keyDown()" onkeyup="keyUp()">
+        <p class="eventKey"></p>
+    </div>
+
+    <script>
+        const keyPress = () => {
+            document.querySelector('.eventKey').innerHTML = `You press ${event.key} and it's code is ${event.code}`;
+        }
+
+        const keyDown = () => {
+            document.querySelector('.eventKey').innerHTML = `you pressed down key`;
+        }
+
+        const keyUp = () => {
+            document.querySelector('.eventKey').innerHTML = `you pressed up key`;
+        }
+    </script>
+</body>
+</html>
