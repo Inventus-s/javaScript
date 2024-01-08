@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Object</title>
+    <style>
+        .heading{
+            width: 100vw;
+            text-align: center;
+        }
+        .container{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 5rem;
+        }
+        .box{
+            border: 1px solid black;
+            padding: 15px 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+            background-color: yellow;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="heading">Different Events Types in JavaScript</h2>
+    <div class="container">
+        <div class="box" id="fourthWay">Event Listener</div>
+    </div>
+
+    <script>
+        let fourthWay = document.querySelector('#fourthWay');
+
+        const checkEvent = () => {
+            alert('hum dekh rahe hai Event Object');
+            console.log(event);
+            console.log(event.target);
+            console.log(event.type);
+        }
+
+        fourthWay.addEventListener('click',checkEvent);
+    </script>
+</body>
+</html>
