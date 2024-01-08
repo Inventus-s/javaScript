@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+</head>
+<body>
+    <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">Click the text! The mouseDown() function is triggered when th mouse button is pressed down over the paragraph, and sets the color of the text to white. The mouseUp() function is triggered when the mouse button is released, and sets the color of the text to red.
+    </p>
+
+    <script>
+        let mouseDown = () => {
+            document.getElementById('myP').style.color = 'white';
+        }
+        let mouseUp = () => {
+            document.getElementById('myP').style.color = 'red';
+        }
+    </script>
+</body>
+</html>
