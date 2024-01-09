@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Change</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <label for="name">Your Name:</label>
+            <input type="text" name="name" id="enterName">
+            <br>
+            <label for="iceCream">Choose your flavour:</label>
+            <select name="iceCream" id="flavour" onchange="selectElement()">
+                <option value="">Select One</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="pineapple">Pineapple</option>
+            </select>
+        </div>
+        <div class="result"></div>
+    </div>
+
+    <script>
+        const selectElement = () => {
+            const enterName = document.querySelector('#enterName').value;
+            const flavour = document.querySelector('#flavour').value;
+            const result = document.querySelector('.result');
+            result.innerHTML = `${enterName} selected ${flavour} ice-cream flavour`;
+            console.log(`${enterName} and ${flavour}`);
+        }
+    </script>
+</body>
+</html>
