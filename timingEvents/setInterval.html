@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>setInterval()</title>
+  </head>
+  <body>
+    <p>Can you stop me when i reach 5 ?</p>
+    <br />
+    <button class="start">Start Here</button>
+    <button class="stop">Stop it</button>
+
+    <script>
+      const count = document.querySelector("p");
+      const start = document.querySelector(".start");
+      const stop = document.querySelector(".stop");
+
+      let num = 0;
+      let timeCount;
+
+      let timeInterval = () => {
+        timeCount = setInterval(() => {
+          count.innerHTML = `${num}`;
+          num++;
+        },1000);
+      };
+
+      start.addEventListener("click", timeInterval);
+      stop.addEventListener(
+        "click",
+        (stopInterval = () => {
+          clearInterval(timeCount);
+        })
+      );
+    </script>
+  </body>
+</html>

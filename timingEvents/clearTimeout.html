@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clearTimeout</title>
+</head>
+<body>
+    <div class="main">
+        <p>Want to know my name ?</p>
+        <p class="myName" ></p>
+        <br>
+        <button class="btn" onclick="myVar = setTimeout(myFunciton,2000)">Click Here</button>
+        <button class="btn" onclick="clearTimeout(myVar)">Stop it</button>
+    </div>
+
+    <script>
+        const btn = document.querySelector('.btn');
+        const myName = document.querySelector('.myName');
+
+        function myFunciton() {
+            alert('Mukund Kumar');
+        }
+    </script>
+</body>
+</html>
