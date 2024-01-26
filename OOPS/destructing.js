@@ -19,5 +19,8 @@
  const bioData = {
     myFname : 'Mukund',
     myFname : 'Kumar',
-    myAge : 26
+    myAge : 22
  }
+
+ let {myFname,myLname,myAge,myDegree = 'BCA'} = bioData;
+ console.log(myAge);
