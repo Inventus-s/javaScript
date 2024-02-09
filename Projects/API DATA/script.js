@@ -10,9 +10,9 @@ searchBtn.addEventListener("click", () => {
   fetch(finalUrl)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
-      console.log(data[0]);
-      console.log(data[0].altSpellings[1]);
+      // console.log(data);
+      // console.log(data[0]);
+      // console.log(data[0].altSpellings[1]);
       result.innerHTML = `<img src="${data[0].flags.svg}" class="flags-img">
         <h2>${data[0].name.common}</h2>
         <div class="wrapper">
