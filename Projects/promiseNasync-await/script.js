@@ -1,6 +1,5 @@
-let jokes = document.getElementsByClassName("jokes");
+let jokes = document.querySelector('.jokes')
 let btn = document.getElementById("click");
-
 
 const  getJoke=()=>{
     const setHeader = {
@@ -9,10 +8,10 @@ const  getJoke=()=>{
         }
     }
 
-    fetch('https://icanhazdadjoke.com',setHeader)
+    fetch('https://hindi-jokes-api.onrender.com/jokes?api_key=8bc101c6042ab6efb9ba96d79f77',setHeader)
     .then((response) => response.json())
     .then((data)=>{
-       console.log(data);
+       jokes.innerHTML = data.jokeContent;  
     })
     .catch((err)=>console.log(err))
 };

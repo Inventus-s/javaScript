@@ -14,8 +14,9 @@ body{
 
 .container{
     background-color: #fff;
-    width: 400px;
-    height: 200px;
+    padding: 5px 10px 5px 17px;
+    max-width: 60vw;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -34,13 +35,21 @@ body{
 }
 
 .buttons:hover .first{
-    margin-top: -40px;
+    margin-top: -50px;
     transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s;
 }
 
-button{
-    padding: 5px 10px;
-    border:  1px solid yellowgreen;
-    border-radius: 5px;
+.buttons:hover #click{
     cursor: pointer;
+}
+
+button{
+    padding: 10px 20px;
+    border:  1px solid rgb(163, 201, 89);
+    border-radius: 5px;
+    font-size: 120%;
+}
+
+.jokes{
+    text-wrap: ;
 }
