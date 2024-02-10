@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(71, 41, 41);
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    width: 80vw;
+    height: 100% ;
+    font-size: 130px;
+    display: grid;
+    align-items: center;
+    margin: 0 auto;
+    color: antiquewhite;
+}
+
+span{
+    font-size: 200px;
+}
