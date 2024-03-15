@@ -28,12 +28,12 @@
 // console.log(result);
 
 // find()
-const prices = [400,200,300,500,600]
-console.log(prices.find((curVal)=>curVal<400));
+// const prices = [400,200,300,500,600]
+// console.log(prices.find((curVal)=>curVal<400));
 
 // findIndex()
-// const prices = [400,200,300,500,600]
-// console.log(prices.findIndex((curVal)=>curVal<400));
+const prices = [400,200,300,500,600]
+console.log(prices.findIndex((curVal)=>curVal<400));
 
 // filter()
 const newPriceTag = prices.filter((ele,index)=> {
@@ -44,11 +44,11 @@ console.log(newPriceTag);
 
 // Sort and Compare
 // sort()
-// const months = ['jan','feb','march','dec','nov','oct']
-// console.log(months.sort());
+const months = ['jan','feb','march','dec','nov','oct']
+console.log(months.sort());
 
 const arr = [1,30,4,21,10000,99];
-// console.log(arr.sort());
+console.log(arr.sort());
 
 // Perform Crud
 
@@ -74,7 +74,7 @@ console.log(animals);
 // console.log(animals);
 
 // Splice() ->> add or remove element from an array
-const months = ['jan','feb','march','dec','nov','oct']
+// const months = ['jan','feb','march','dec','nov','oct']
 
 // add Dec at end
 // sol:1
@@ -105,11 +105,11 @@ const months = ['jan','feb','march','dec','nov','oct']
 // console.log(months);
 
 // sol:4 ->>> delete 'jan'
-const exist = months.indexOf('jan');
-if(exist != -1){
-    const erase = months.splice(exist,1);
-    console.log(erase);
-} else {
-    console.log('Data Not Found');
-}
-console.log(months);
+// const exist = months.indexOf('jan');
+// if(exist != -1){
+//     const erase = months.splice(exist,1);
+//     console.log(erase);
+// } else {
+//     console.log('Data Not Found');
+// }
+// console.log(months);

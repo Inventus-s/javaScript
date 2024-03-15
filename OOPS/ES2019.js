@@ -13,4 +13,5 @@ console.log(std.flat(Infinity));
 // Object.fromEntries() --> come back from array to object
 const person = {name:'fred',age:26}
 let arr = Object.entries(person);
+console.log(arr);
 console.log(Object.fromEntries(arr));
